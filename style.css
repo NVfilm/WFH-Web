@@ -1,0 +1,325 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f8f9fa;
+    color:#333;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+.hero{
+    background:linear-gradient(135deg,#1e3c72,#2a5298);
+    color:white;
+    text-align:center;
+    padding:100px 20px;
+}
+
+.hero h1{
+    font-size:50px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:20px;
+    margin-bottom:25px;
+}
+
+.btn{
+    background:#ff9800;
+    color:white;
+    padding:12px 30px;
+    text-decoration:none;
+    border-radius:6px;
+}
+
+.section{
+    padding:70px 0;
+    text-align:center;
+}
+
+.section h2{
+    margin-bottom:40px;
+    font-size:36px;
+}
+
+.cards{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    justify-content:center;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    width:300px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.card i{
+    font-size:40px;
+    color:#2a5298;
+    margin-bottom:15px;
+}
+
+.income{
+    background:#2a5298;
+    color:white;
+    padding:70px 0;
+    text-align:center;
+}
+
+.counter-box{
+    display:flex;
+    justify-content:center;
+    gap:50px;
+    flex-wrap:wrap;
+}
+
+.counter{
+    font-size:50px;
+    margin-bottom:10px;
+}
+
+.testimonials{
+    background:#f1f1f1;
+    padding:70px 0;
+    text-align:center;
+}
+
+.slide{
+    display:none;
+    font-size:20px;
+}
+
+.slide.active{
+    display:block;
+}
+
+form{
+    max-width:500px;
+    margin:auto;
+}
+
+form input{
+    width:100%;
+    padding:15px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:6px;
+}
+
+form button{
+    width:100%;
+    padding:15px;
+    border:none;
+    background:#2a5298;
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+    border-radius:6px;
+}
+
+.whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:60px;
+    height:60px;
+    background:#25D366;
+    color:white;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:32px;
+    text-decoration:none;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:34px;
+}
+
+.cards{
+    flex-direction:column;
+    align-items:center;
+}
+
+.counter-box{
+    flex-direction:column;
+}
+}*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f8f9fa;
+    color:#333;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+.hero{
+    background:linear-gradient(135deg,#1e3c72,#2a5298);
+    color:white;
+    text-align:center;
+    padding:100px 20px;
+}
+
+.hero h1{
+    font-size:50px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:20px;
+    margin-bottom:25px;
+}
+
+.btn{
+    background:#ff9800;
+    color:white;
+    padding:12px 30px;
+    text-decoration:none;
+    border-radius:6px;
+}
+
+.section{
+    padding:70px 0;
+    text-align:center;
+}
+
+.section h2{
+    margin-bottom:40px;
+    font-size:36px;
+}
+
+.cards{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    justify-content:center;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    width:300px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.card i{
+    font-size:40px;
+    color:#2a5298;
+    margin-bottom:15px;
+}
+
+.income{
+    background:#2a5298;
+    color:white;
+    padding:70px 0;
+    text-align:center;
+}
+
+.counter-box{
+    display:flex;
+    justify-content:center;
+    gap:50px;
+    flex-wrap:wrap;
+}
+
+.counter{
+    font-size:50px;
+    margin-bottom:10px;
+}
+
+.testimonials{
+    background:#f1f1f1;
+    padding:70px 0;
+    text-align:center;
+}
+
+.slide{
+    display:none;
+    font-size:20px;
+}
+
+.slide.active{
+    display:block;
+}
+
+form{
+    max-width:500px;
+    margin:auto;
+}
+
+form input{
+    width:100%;
+    padding:15px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:6px;
+}
+
+form button{
+    width:100%;
+    padding:15px;
+    border:none;
+    background:#2a5298;
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+    border-radius:6px;
+}
+
+.whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:60px;
+    height:60px;
+    background:#25D366;
+    color:white;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:32px;
+    text-decoration:none;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:34px;
+}
+
+.cards{
+    flex-direction:column;
+    align-items:center;
+}
+
+.counter-box{
+    flex-direction:column;
+}
+}
