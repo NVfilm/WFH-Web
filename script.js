@@ -87,28 +87,35 @@ faqButtons.forEach(button => {
 // WHATSAPP LEAD FORM
 // =========================
 
-const leadForm =
-document.getElementById("leadForm");
-
-leadForm.addEventListener("submit", function(e){
+leadForm.addEventListener("submit", async function(e){
 
     e.preventDefault();
 
-    let name =
-    document.getElementById("name").value;
+    let name = document.getElementById("name").value;
+    let phone = document.getElementById("phone").value;
+    let email = document.getElementById("email").value;
+    let city = document.getElementById("city").value;
 
-    let phone =
-    document.getElementById("phone").value;
+    // n8n webhook par data bhejo
+    try {
+        await fetch("https://nvgrowthhub.app.n8n.cloud/webhook/lead-capture", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                name: name,
+                phone: phone,
+                email: email,
+                city: city,
+                service: "Work From Home Opportunity"
+            })
+        });
+    } catch (error) {
+        console.error("Webhook Error:", error);
+    }
 
-    let email =
-    document.getElementById("email").value;
-
-    let city =
-    document.getElementById("city").value;
-
-    let message =
-
-`🔥 New Work From Home Lead
+    let message = `🔥 New Work From Home Lead
 
 👤 Name: ${name}
 
@@ -123,15 +130,11 @@ Interested in Work From Home Opportunity`;
     let whatsappURL =
     `https://wa.me/918796493504?text=${encodeURIComponent(message)}`;
 
-    window.open(
-        whatsappURL,
-        "_blank"
-    );
+    window.open(whatsappURL, "_blank");
 
     leadForm.reset();
 
 });
-
 
 // =========================
 // SCROLL REVEAL ANIMATION
